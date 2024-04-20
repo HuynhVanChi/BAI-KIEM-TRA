@@ -7,11 +7,11 @@ int main() {
     string danhsachMSSV[5] = { "0", "2303CT2275", "2302CT2286", "2301CT2293", "2304CT2295" };
 
     // Phần 2: Yeu cau ngoui dung nhap MSSV của minh
-    cout << "Nhập mã số sinh viên của bạn: ";
+    cout << "Nhap ma so sinh vien cua ban: ";
     getline(cin, danhsachMSSV[0]);
 
     // Phần 3: In mang ra man hinh
-    cout << "Danh sách MSSV:" << endl;
+    cout << "Danh sach MSSV:" << endl;
     for (int i = 0; i < 5; i++) {
         cout << danhsachMSSV[i] << endl;
     }
@@ -29,7 +29,7 @@ int main() {
     }
 
     // In mang da sap xep ra man hinh
-    cout << "\nDanh sach MSSV đã sap xep:" << endl;
+    cout << "Danh sach MSSV đa sap xep:" << endl;
     for (int i = 0; i < 5; i++) {
         cout << danhsachMSSV[i] << endl;
     }
@@ -42,7 +42,7 @@ int main() {
             maxMSSV = ptrArrayMSSV + i;
         }
     }
-    cout << "Đia chi của phan tu chua MSSV lon nhat: " << maxMSSV << endl;
+    cout << "Đia chi của MSSV lon nhat: " << maxMSSV << endl;
     cout << "MSSV lon nhat: " << *maxMSSV << endl;
 
     return 0;
